@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-ul {
-    list-style: none;
-}
-
 body {
     background-image: url(../assets/bg.jpg);
     background-position: top center;
@@ -24,15 +20,23 @@ body * {
 main {
     max-width: 580px;
     width: 90%;
-
+    
     display: grid;
     gap: 24px;
     margin: 32px auto;
 }
 
-header {
-    margin: 38px;
-    text-align: center;
+header img {
+    padding-top: 38px;
+    display: grid;
+    margin: auto;
+
+    transition: transform .3s;
+}
+
+header img:hover {
+    transform: scale(1.1);
+
 }
 
 section {
@@ -63,6 +67,18 @@ section ul {
     flex-wrap: wrap;
     gap: 16px;
     margin-top: 24px;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+ul {
+    list-style: none;
 }
 
 .game-list img {
